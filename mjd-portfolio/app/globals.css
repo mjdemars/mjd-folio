@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Outfit: "Outfit", "sans-serif";
+  --font-Ovo: "Ovo", "san-serif";
+  --font-Vollkorn: "Vollkorn";
+
+  --text-transform: uppercase;
+
+  --color-light-hover: oklch(.929 .013 255.508);
+  --color-dark-hover: #2a004a;
+  --color-darktheme: #11001f;
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+
+  --shadow-custom-size: 4px 4px 20px;
+}
+
+/* nav button */
+.navButton {
+  font-size: 1em;
+  color: black;
+  transition-duration: 0.3s;
+}
+
+.navButton:hover {
+  color: grey;
+}
+
+.navButton:focus {
+  color: indigo;
+  text-decoration: underline;
+}
+/* nav button */
+
+
+/* contact button */
+.buttonLink {
+  transition-duration: 0.4s;
+  color: black;
+}
+
+.buttonLink:hover {
+  color: indigo;
+  background-color: #ffffff;
+  border-color:indigo;
+  transform: scale(1.05);
+  animation-duration: 2s;
+}
+
+.buttonLink:active {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px indigo;
+  transform: scale(1.05);
+  transform: translateY(4px);
+}
+/* contact button */
+
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db; /* Blue color */
+  border-radius: 50%;
+  pointer-events: none; /* Make sure the cursor doesn't interfere with clicks */
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.cursor.large {
+  width: 40px;
+  height: 40px;
+}
+
+/* column button */
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  margin: 50px auto;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px;
+  background-color: indigo;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: indigo;
+}
